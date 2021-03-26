@@ -2,7 +2,7 @@
 
   <div class="login">
     <notifications position="center top" group="login_notification"/>
-<center><h1>ByteCodeLearners Members Login</h1></center>
+<div style="text-align: center;"><h1>ByteCodeLearners Members Login</h1></div>
 <br><br>
     <v-card width="400" class="mx-auto my-auto" style="margin-top:40vh">
       <v-card-title>

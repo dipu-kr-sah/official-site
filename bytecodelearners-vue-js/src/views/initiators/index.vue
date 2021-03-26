@@ -1,13 +1,13 @@
 <template>
     <div class="founders-page mt-7">
         <div class="heading d-flex flex-row ">
-            <div class="logo">
+            <div class="logo" @click="$router.push('/')" style="cursor: pointer">
                 <img src="http://bytecodelearners.club/statics/byte-code-learners.svg">
             </div>
             <v-card elevation="0" class="initiators-head">FOUNDERS OF THE CLUB</v-card>
         </div>
-            <v-card >
-                <v-card-text elevation="0">
+            <v-card  elevation="0">
+                <v-card-text>
                     <div class="description d-flex justify-center align-center">
                         <div class="image flex-shrink-1">
                             <img src="../../assets/img.jpg"/>
@@ -23,8 +23,8 @@
                     </div>
                 </v-card-text>
             </v-card>
-        <div class="d-flex">
-            <InitiatorDetailsCard class="flex-shrink-1 flex-grow-1 mx-2 my-2"  v-for="(initiator,key) in initiators" :key="key" :details="initiator"/>
+        <div class="d-flex" style="flex-wrap:wrap">
+            <InitiatorDetailsCard class=""  v-for="(initiator,key) in initiators" :key="key" :details="initiator"/>
         </div>
     </div>
 </template>
@@ -101,9 +101,11 @@
         box-sizing: border-box;
         height: fit-content;
         color: black;
-        padding: 1em;
+        padding: 1.3em;
         line-height: 1.4em;
         font-weight: bold;
+        box-shadow: 0.3em 0.3em 0.7em 0 #C4C4C450;
+        border-radius: 1em;
     }
     .image{
         width: 15em;
