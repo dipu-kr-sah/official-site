@@ -1,5 +1,5 @@
 <template>
-<form @submit.prevent="formSubmit">
+<form v-bind="$attrs" @submit.prevent="formSubmit">
     <slot></slot>
     <v-btn class="submit-btn" type="submit"> submit</v-btn>
 </form>
